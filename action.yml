@@ -12,7 +12,8 @@ inputs:
     required: true
   bump:
     description: 'major, minor, patch, revision or none'
-    required: true
+    required: false
+    default: none
   format:
     description:
       'output format: a.b.c or a.b.c.d (auto-detected if not specified)'
