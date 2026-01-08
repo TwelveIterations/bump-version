@@ -57,7 +57,9 @@ jobs:
         id: test-action
         uses: ./
         with:
-          version: '21.11.*'
+          version: '26.1'
+          format: 'a.b.c.d'
+          bump: 'revision'
 
       - name: Print Output
         id: output
