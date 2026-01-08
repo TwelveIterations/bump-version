@@ -1,12 +1,16 @@
-name: 'Bump Semantic Version'
-description: 'Bumps either major, minor, or patch of a semantic version. Only works for simple x.y.z versions.'
+name: 'Bump Version'
+description: 'Bumps either major, minor, patch, or revision of a version.'
 inputs:
   version:
-    description: 'version in x.y.z format'
+    description: 'version in x.y, x.y.z, or x.y.z.v format'
     required: true
   bump:
-    description: 'major, minor, or patch'
+    description: 'major, minor, patch, revision or none'
     required: true
+  format:
+    description:
+      'output format: a.b.c or a.b.c.d (auto-detected if not specified)'
+    required: false
 outputs:
   version:
     description: 'The bumped version'
