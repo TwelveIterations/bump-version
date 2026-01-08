@@ -1,5 +1,11 @@
 name: 'Bump Version'
 description: 'Bumps either major, minor, patch, or revision of a version.'
+author: Twelve Iterations
+
+branding:
+  icon: heart
+  color: red
+
 inputs:
   version:
     description: 'version in x.y, x.y.z, or x.y.z.v format'
@@ -11,9 +17,11 @@ inputs:
     description:
       'output format: a.b.c or a.b.c.d (auto-detected if not specified)'
     required: false
+
 outputs:
   version:
     description: 'The bumped version'
+
 runs:
-  using: 'node16'
-  main: 'dist/index.js'
+  using: node20
+  main: dist/index.js
